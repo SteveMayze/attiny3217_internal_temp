@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+
+
+# MPLab X IDE
+
+dist
+build
+debug
+
