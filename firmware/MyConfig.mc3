@@ -362,24 +362,24 @@
          <value>3</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="USART0" registerAlias="STATUS" settingAlias="RXCIF" alias="enabled"/>
-         <value>1</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC0" name="PIN_AIN2"/>
          <value></value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="USART0" registerAlias="STATUS" settingAlias="RXCIF" alias="enabled"/>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="PORTA.PIN3CTRL" settingAlias="INVEN" alias="enabled"/>
          <value>1</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="VREF" registerAlias="CTRLD" settingAlias="DAC2REFSEL" alias="0V55"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC0" name="PIN_AIN1"/>
          <value></value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="VREF" registerAlias="CTRLD" settingAlias="DAC2REFSEL" alias="0V55"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC0" name="PIN_AIN4"/>
@@ -635,7 +635,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="USART0" name="IsTxISREnable"/>
-         <value>true</value>
+         <value>false</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC0" name="voltageReference"/>
@@ -871,7 +871,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC0" name="selectedChannels"/>
-         <value>{&quot;type&quot;:&quot;table&quot;,&quot;key&quot;:&quot;selectedChannels&quot;,&quot;dataArray&quot;: [{&quot;Pin&quot;:&quot;Internal Channel&quot;,&quot;Channel&quot;:&quot;GND&quot;,&quot;Custom Name&quot;:&quot;channel_GND&quot;},{&quot;Pin&quot;:&quot;Internal Channel&quot;,&quot;Channel&quot;:&quot;DAC0/DAC0&quot;,&quot;Custom Name&quot;:&quot;channel_DAC0/DAC0&quot;},{&quot;Pin&quot;:&quot;Internal Channel&quot;,&quot;Channel&quot;:&quot;Temp_sensor/DAC1&quot;,&quot;Custom Name&quot;:&quot;channel_Temp sensor/DAC1&quot;},{&quot;Pin&quot;:&quot;Internal Channel&quot;,&quot;Channel&quot;:&quot;PTC/DAC2&quot;,&quot;Custom Name&quot;:&quot;channel_PTC/DAC2&quot;},{&quot;Pin&quot;:&quot;Internal Channel&quot;,&quot;Channel&quot;:&quot;Internal_Ref&quot;,&quot;Custom Name&quot;:&quot;channel_Internal Ref&quot;}] }</value>
+         <value>{&quot;type&quot;:&quot;table&quot;,&quot;key&quot;:&quot;selectedChannels&quot;,&quot;dataArray&quot;: [{&quot;Pin&quot;:&quot;Internal Channel&quot;,&quot;Channel&quot;:&quot;Temp_sensor/DAC1&quot;,&quot;Custom Name&quot;:&quot;channel_Temp sensor/DAC1&quot;},{&quot;Pin&quot;:&quot;Internal Channel&quot;,&quot;Channel&quot;:&quot;Internal_Ref&quot;,&quot;Custom Name&quot;:&quot;channel_Internal Ref&quot;},{&quot;Pin&quot;:&quot;Internal Channel&quot;,&quot;Channel&quot;:&quot;GND&quot;,&quot;Custom Name&quot;:&quot;channel_GND&quot;},{&quot;Pin&quot;:&quot;Internal Channel&quot;,&quot;Channel&quot;:&quot;PTC/DAC2&quot;,&quot;Custom Name&quot;:&quot;channel_PTC/DAC2&quot;},{&quot;Pin&quot;:&quot;Internal Channel&quot;,&quot;Channel&quot;:&quot;DAC0/DAC0&quot;,&quot;Custom Name&quot;:&quot;channel_DAC0/DAC0&quot;}] }</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="iocUserSet PC0"/>
@@ -962,12 +962,12 @@
          <value>disabled</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="USART0" registerAlias="CTRLB" settingAlias="MPCM"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC0" name="sampleLength_MAX"/>
          <value>1666666</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="USART0" registerAlias="CTRLB" settingAlias="MPCM"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="PORTMUX.CTRLB" settingAlias="TWI0" alias="ALTERNATE"/>
@@ -1018,12 +1018,12 @@
          <value>2</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="USART0" registerAlias="DBGCTRL"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="ADC0" name="samplingFrq"/>
          <value>119047</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="USART0" registerAlias="DBGCTRL"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="PORTB.PIN7CTRL" settingAlias="PULLUPEN" alias="disabled"/>
@@ -1186,12 +1186,12 @@
          <value>216</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="USART0" name="USART0_TXCISRFunction"/>
-         <value>ISR_USART0_TXC</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC0" registerAlias="CTRLD" settingAlias="ASDV" alias="ASVOFF"/>
          <value>0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="USART0" name="USART0_TXCISRFunction"/>
+         <value>ISR_USART0_TXC</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="System Module" registerAlias="TCD0CFG" settingAlias="CMPAEN" alias="enabled"/>
@@ -1219,7 +1219,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="USART0" registerAlias="CTRLA" settingAlias="RXCIE"/>
-         <value>enabled</value>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="PORTB.PIN4CTRL" settingAlias="ISC" alias="INPUT_DISABLE"/>
@@ -1290,12 +1290,12 @@
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="CPUINT" registerAlias="SREG" settingAlias="I" alias="enabled"/>
-         <value>1</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="CLKCTRL" registerAlias="MCLKCTRLB" settingAlias="PDIV" alias="16X"/>
          <value>3</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="CPUINT" registerAlias="SREG" settingAlias="I" alias="enabled"/>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="CLKCTRL" registerAlias="MCLKLOCK"/>
@@ -1394,12 +1394,12 @@
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="USART0" name="Printf"/>
-         <value>true</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC0" registerAlias="INTFLAGS" settingAlias="RESRDY" alias="enabled"/>
          <value>1</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="USART0" name="Printf"/>
+         <value>true</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="USART0" registerAlias="ABE" settingAlias="flag"/>
@@ -1418,6 +1418,10 @@
          <value>DLY32</value>
       </entry>
       <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ADC0" registerAlias="RESRDY" settingAlias="enable"/>
+         <value>disabled</value>
+      </entry>
+      <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="USART0" name="ErrorPer"/>
          <value>-0.063%</value>
       </entry>
@@ -1426,16 +1430,12 @@
          <value>disabled</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ADC0" registerAlias="RESRDY" settingAlias="enable"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="Pin Module" registerAlias="PORTC.OUTCLR"/>
          <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="USART0" registerAlias="CTRLA" settingAlias="RXSIE"/>
-         <value>enabled</value>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="BOD" registerAlias="VLMCTRLA" settingAlias="VLMLVL"/>
@@ -1882,12 +1882,12 @@
          <value>3</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="USART0" registerAlias="CTRLC" settingAlias="SBMODE" alias="2BIT"/>
-         <value>1</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC0" registerAlias="CTRLE" settingAlias="WINCM" alias="OUTSIDE"/>
          <value>4</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="USART0" registerAlias="CTRLC" settingAlias="SBMODE" alias="2BIT"/>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="PORTB.PIN7CTRL" settingAlias="ISC"/>
@@ -2046,11 +2046,11 @@
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="CPUINT" registerAlias="CTRLA"/>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="System Module" registerAlias="BODCFG" settingAlias="ACTIVE" alias="DIS"/>
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="System Module" registerAlias="BODCFG" settingAlias="ACTIVE" alias="DIS"/>
+         <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="CPUINT" registerAlias="CTRLA"/>
          <value>0</value>
       </entry>
       <entry>
@@ -2115,7 +2115,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="USART0" name="InterruptDriven"/>
-         <value>true</value>
+         <value>false</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="USART0" name="USART0_RXSISRFunction"/>
@@ -2123,7 +2123,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="USART0" registerAlias="RXS" settingAlias="enable"/>
-         <value>enabled</value>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="PORTC.PIN6CTRL" settingAlias="ISC"/>
@@ -2198,12 +2198,12 @@
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="USART0" name="IsRxISREnable"/>
-         <value>true</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC0" registerAlias="CTRLB" settingAlias="SAMPNUM" alias="ACC16"/>
          <value>4</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="USART0" name="IsRxISREnable"/>
+         <value>false</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="PORTB.IN" settingAlias="PORTB.IN"/>
@@ -2410,12 +2410,12 @@
          <value>4</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="VREF" registerAlias="CTRLA" settingAlias="ADC0REFSEL"/>
-         <value>1V1</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC0" registerAlias="INTCTRL" settingAlias="RESRDY" alias="disabled"/>
          <value>0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="VREF" registerAlias="CTRLA" settingAlias="ADC0REFSEL"/>
+         <value>1V1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="PORTB.PIN4CTRL" settingAlias="ISC" alias="BOTHEDGES"/>
@@ -2630,12 +2630,12 @@
          <value>enabled</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="CPUINT" registerAlias="CTRLA" settingAlias="IVSEL" alias="disabled"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="System Module" registerAlias="SYSCFG0" settingAlias="RSTPINCFG"/>
          <value>UPDI</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="CPUINT" registerAlias="CTRLA" settingAlias="IVSEL" alias="disabled"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="VPORTA.INTFLAGS" settingAlias="INT"/>
@@ -3226,11 +3226,11 @@
          <value>DEFAULT</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="VREF" registerAlias="CTRLC" settingAlias="DAC1REFSEL" alias="0V55"/>
+         <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ADC0" registerAlias="TEMP"/>
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ADC0" registerAlias="TEMP"/>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="VREF" registerAlias="CTRLC" settingAlias="DAC1REFSEL" alias="0V55"/>
          <value>0</value>
       </entry>
       <entry>
@@ -3238,12 +3238,12 @@
          <value>1</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="USART0" registerAlias="CTRLB" settingAlias="MPCM" alias="enabled"/>
-         <value>1</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ADC0" registerAlias="WCMP" settingAlias="flag"/>
          <value>disabled</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="USART0" registerAlias="CTRLB" settingAlias="MPCM" alias="enabled"/>
+         <value>1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="PORTB.PIN4CTRL" settingAlias="INVEN" alias="enabled"/>
@@ -3391,7 +3391,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Interrupt Manager" name="interruptVectorTable"/>
-         <value>{&quot;type&quot;:&quot;tableDynamicControls&quot;,&quot;key&quot;:&quot;interruptVectorTable&quot;,&quot;dataArray&quot;: [{&quot;Module&quot;: {&quot;id&quot;:&quot;Module_rowCount_0&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;USART0&quot;,&quot;value&quot;:&quot;USART0&quot;}},&quot;Interrupt&quot;: {&quot;id&quot;:&quot;Interrupt_rowCount_0&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;ABE&quot;,&quot;value&quot;:&quot;ABE&quot;}},&quot;Enable&quot;: {&quot;id&quot;:&quot;Enable_rowCount_0&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;false&quot;,&quot;value&quot;:&quot;false&quot;}}},{&quot;Module&quot;: {&quot;id&quot;:&quot;Module_rowCount_1&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;BOD&quot;,&quot;value&quot;:&quot;BOD&quot;}},&quot;Interrupt&quot;: {&quot;id&quot;:&quot;Interrupt_rowCount_1&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;VLM&quot;,&quot;value&quot;:&quot;VLM&quot;}},&quot;Enable&quot;: {&quot;id&quot;:&quot;Enable_rowCount_1&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;false&quot;,&quot;value&quot;:&quot;false&quot;}}},{&quot;Module&quot;: {&quot;id&quot;:&quot;Module_rowCount_2&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;USART0&quot;,&quot;value&quot;:&quot;USART0&quot;}},&quot;Interrupt&quot;: {&quot;id&quot;:&quot;Interrupt_rowCount_2&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;DRE&quot;,&quot;value&quot;:&quot;DRE&quot;}},&quot;Enable&quot;: {&quot;id&quot;:&quot;Enable_rowCount_2&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;false&quot;,&quot;value&quot;:&quot;false&quot;}}},{&quot;Module&quot;: {&quot;id&quot;:&quot;Module_rowCount_3&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;ADC0&quot;,&quot;value&quot;:&quot;ADC0&quot;}},&quot;Interrupt&quot;: {&quot;id&quot;:&quot;Interrupt_rowCount_3&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;RESRDY&quot;,&quot;value&quot;:&quot;RESRDY&quot;}},&quot;Enable&quot;: {&quot;id&quot;:&quot;Enable_rowCount_3&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;false&quot;,&quot;value&quot;:&quot;false&quot;}}},{&quot;Module&quot;: {&quot;id&quot;:&quot;Module_rowCount_4&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;ADC0&quot;,&quot;value&quot;:&quot;ADC0&quot;}},&quot;Interrupt&quot;: {&quot;id&quot;:&quot;Interrupt_rowCount_4&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;WCMP&quot;,&quot;value&quot;:&quot;WCMP&quot;}},&quot;Enable&quot;: {&quot;id&quot;:&quot;Enable_rowCount_4&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;false&quot;,&quot;value&quot;:&quot;false&quot;}}},{&quot;Module&quot;: {&quot;id&quot;:&quot;Module_rowCount_5&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;USART0&quot;,&quot;value&quot;:&quot;USART0&quot;}},&quot;Interrupt&quot;: {&quot;id&quot;:&quot;Interrupt_rowCount_5&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;RXC&quot;,&quot;value&quot;:&quot;RXC&quot;}},&quot;Enable&quot;: {&quot;id&quot;:&quot;Enable_rowCount_5&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;true&quot;,&quot;value&quot;:&quot;true&quot;}}},{&quot;Module&quot;: {&quot;id&quot;:&quot;Module_rowCount_6&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;USART0&quot;,&quot;value&quot;:&quot;USART0&quot;}},&quot;Interrupt&quot;: {&quot;id&quot;:&quot;Interrupt_rowCount_6&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;RXS&quot;,&quot;value&quot;:&quot;RXS&quot;}},&quot;Enable&quot;: {&quot;id&quot;:&quot;Enable_rowCount_6&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;true&quot;,&quot;value&quot;:&quot;true&quot;}}},{&quot;Module&quot;: {&quot;id&quot;:&quot;Module_rowCount_7&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;USART0&quot;,&quot;value&quot;:&quot;USART0&quot;}},&quot;Interrupt&quot;: {&quot;id&quot;:&quot;Interrupt_rowCount_7&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;TXC&quot;,&quot;value&quot;:&quot;TXC&quot;}},&quot;Enable&quot;: {&quot;id&quot;:&quot;Enable_rowCount_7&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;true&quot;,&quot;value&quot;:&quot;true&quot;}}}] } </value>
+         <value>{&quot;type&quot;:&quot;tableDynamicControls&quot;,&quot;key&quot;:&quot;interruptVectorTable&quot;,&quot;dataArray&quot;: [{&quot;Module&quot;: {&quot;id&quot;:&quot;Module_rowCount_0&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;USART0&quot;,&quot;value&quot;:&quot;USART0&quot;}},&quot;Interrupt&quot;: {&quot;id&quot;:&quot;Interrupt_rowCount_0&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;ABE&quot;,&quot;value&quot;:&quot;ABE&quot;}},&quot;Enable&quot;: {&quot;id&quot;:&quot;Enable_rowCount_0&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;false&quot;,&quot;value&quot;:&quot;false&quot;}}},{&quot;Module&quot;: {&quot;id&quot;:&quot;Module_rowCount_1&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;BOD&quot;,&quot;value&quot;:&quot;BOD&quot;}},&quot;Interrupt&quot;: {&quot;id&quot;:&quot;Interrupt_rowCount_1&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;VLM&quot;,&quot;value&quot;:&quot;VLM&quot;}},&quot;Enable&quot;: {&quot;id&quot;:&quot;Enable_rowCount_1&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;false&quot;,&quot;value&quot;:&quot;false&quot;}}},{&quot;Module&quot;: {&quot;id&quot;:&quot;Module_rowCount_2&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;USART0&quot;,&quot;value&quot;:&quot;USART0&quot;}},&quot;Interrupt&quot;: {&quot;id&quot;:&quot;Interrupt_rowCount_2&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;DRE&quot;,&quot;value&quot;:&quot;DRE&quot;}},&quot;Enable&quot;: {&quot;id&quot;:&quot;Enable_rowCount_2&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;false&quot;,&quot;value&quot;:&quot;false&quot;}}},{&quot;Module&quot;: {&quot;id&quot;:&quot;Module_rowCount_3&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;ADC0&quot;,&quot;value&quot;:&quot;ADC0&quot;}},&quot;Interrupt&quot;: {&quot;id&quot;:&quot;Interrupt_rowCount_3&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;RESRDY&quot;,&quot;value&quot;:&quot;RESRDY&quot;}},&quot;Enable&quot;: {&quot;id&quot;:&quot;Enable_rowCount_3&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;false&quot;,&quot;value&quot;:&quot;false&quot;}}},{&quot;Module&quot;: {&quot;id&quot;:&quot;Module_rowCount_4&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;ADC0&quot;,&quot;value&quot;:&quot;ADC0&quot;}},&quot;Interrupt&quot;: {&quot;id&quot;:&quot;Interrupt_rowCount_4&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;WCMP&quot;,&quot;value&quot;:&quot;WCMP&quot;}},&quot;Enable&quot;: {&quot;id&quot;:&quot;Enable_rowCount_4&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;false&quot;,&quot;value&quot;:&quot;false&quot;}}},{&quot;Module&quot;: {&quot;id&quot;:&quot;Module_rowCount_5&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;USART0&quot;,&quot;value&quot;:&quot;USART0&quot;}},&quot;Interrupt&quot;: {&quot;id&quot;:&quot;Interrupt_rowCount_5&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;RXC&quot;,&quot;value&quot;:&quot;RXC&quot;}},&quot;Enable&quot;: {&quot;id&quot;:&quot;Enable_rowCount_5&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;false&quot;,&quot;value&quot;:&quot;false&quot;}}},{&quot;Module&quot;: {&quot;id&quot;:&quot;Module_rowCount_6&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;USART0&quot;,&quot;value&quot;:&quot;USART0&quot;}},&quot;Interrupt&quot;: {&quot;id&quot;:&quot;Interrupt_rowCount_6&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;RXS&quot;,&quot;value&quot;:&quot;RXS&quot;}},&quot;Enable&quot;: {&quot;id&quot;:&quot;Enable_rowCount_6&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;false&quot;,&quot;value&quot;:&quot;false&quot;}}},{&quot;Module&quot;: {&quot;id&quot;:&quot;Module_rowCount_7&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;USART0&quot;,&quot;value&quot;:&quot;USART0&quot;}},&quot;Interrupt&quot;: {&quot;id&quot;:&quot;Interrupt_rowCount_7&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;TXC&quot;,&quot;value&quot;:&quot;TXC&quot;}},&quot;Enable&quot;: {&quot;id&quot;:&quot;Enable_rowCount_7&quot;,&quot;data&quot;:{&quot;text&quot;:&quot;false&quot;,&quot;value&quot;:&quot;false&quot;}}}] } </value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="BOD" registerAlias="INTCTRL" settingAlias="VLMIE"/>
@@ -3590,12 +3590,12 @@
          <value>3</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="VREF" registerAlias="CTRLB" settingAlias="DAC1REFEN"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ADC0" registerAlias="TEMP" settingAlias="TEMP"/>
          <value>0</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="VREF" registerAlias="CTRLB" settingAlias="DAC1REFEN"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="CLKCTRL" registerAlias="MCLKCTRLA" settingAlias="CLKOUT" alias="enabled"/>
@@ -3659,7 +3659,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="USART0" registerAlias="RXC" settingAlias="enable"/>
-         <value>enabled</value>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="CPU" registerAlias="CCP" settingAlias="CCP" alias="SPM"/>
@@ -3703,7 +3703,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="USART0" registerAlias="CTRLA" settingAlias="TXCIE"/>
-         <value>enabled</value>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC0" registerAlias="CTRLD" settingAlias="INITDLY" alias="DLY64"/>
@@ -3911,7 +3911,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="USART0" registerAlias="TXC" settingAlias="enable"/>
-         <value>enabled</value>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="BOD" registerAlias="CTRLA" settingAlias="ACTIVE" alias="SAMPLED"/>
@@ -3926,11 +3926,11 @@
          <value>1</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="USART0" registerAlias="CTRLC" settingAlias="SBMODE" alias="1BIT"/>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC0" registerAlias="CTRLC" settingAlias="SAMPCAP" alias="disabled"/>
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC0" registerAlias="CTRLC" settingAlias="SAMPCAP" alias="disabled"/>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="USART0" registerAlias="CTRLC" settingAlias="SBMODE" alias="1BIT"/>
          <value>0</value>
       </entry>
       <entry>
@@ -4198,12 +4198,12 @@
          <value>false</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="USART0" registerAlias="CTRLA" settingAlias="DREIE"/>
-         <value>disabled</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC0" registerAlias="CALIB" settingAlias="DUTYCYC" alias="DUTY25"/>
          <value>1</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="USART0" registerAlias="CTRLA" settingAlias="DREIE"/>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="DIR_PA4"/>
@@ -4442,12 +4442,12 @@
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Interrupt Manager" name="isCMPVectorEnable"/>
-         <value>false</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="System Module" registerAlias="TCD0CFG" settingAlias="CMPA" alias="enabled"/>
          <value>1</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Interrupt Manager" name="isCMPVectorEnable"/>
+         <value>false</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="CPUINT" registerAlias="CTRLA" settingAlias="LVL0RR" alias="enabled"/>
@@ -4458,12 +4458,12 @@
          <value>1</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="USART0" registerAlias="STATUS" settingAlias="DREIF" alias="disabled"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ADC0" registerAlias="CTRLC" settingAlias="REFSEL"/>
          <value>INTREF</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="USART0" registerAlias="STATUS" settingAlias="DREIF" alias="disabled"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="PORTA.PIN5CTRL" settingAlias="ISC" alias="INTDISABLE"/>
@@ -4647,7 +4647,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="USART0" registerAlias="CTRLA"/>
-         <value>208</value>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="VREF" registerAlias="CTRLC"/>
@@ -4778,12 +4778,12 @@
          <value>17</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="VREF" registerAlias="CTRLB" settingAlias="DAC1REFEN" alias="disabled"/>
-         <value>0</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="ADC0" registerAlias="CTRLC" settingAlias="REFSEL" alias="VDDREF"/>
          <value>1</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="VREF" registerAlias="CTRLB" settingAlias="DAC1REFEN" alias="disabled"/>
+         <value>0</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="Pin Module" registerAlias="PORTC.PIN4CTRL" settingAlias="PULLUPEN" alias="disabled"/>
@@ -5296,12 +5296,12 @@
          <hash>cbb77814a108d052bcdca59fc430b329e443c54d3632936e99bb1239801a6962</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\src\cpuint.c</file>
-         <hash>caeb52768999d91897f0ac3b19f4b61e8089d3306ffface466d36a3b680d875d</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\utils\interrupt_avr8.h</file>
          <hash>98adc596175f2e76d4d918685cf050032a3efb605901edb6be0a35dda05a57e9</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\src\cpuint.c</file>
+         <hash>caeb52768999d91897f0ac3b19f4b61e8089d3306ffface466d36a3b680d875d</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\include\ccp.h</file>
@@ -5313,7 +5313,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files\mcc.c</file>
-         <hash>2c695513e58248592118a49bcc6c16b64606aafede1a5c4a141943dc2b10ad3b</hash>
+         <hash>da31d6dcb44700780eec08cb470ec9c18e0a05f1992321f86172cc466fcc6bed</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\include\adc0.h</file>
@@ -5325,7 +5325,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files\mcc.h</file>
-         <hash>9cd48e1bfbd7d4d47ab93ba7734fa6e83a3a97cb3127adcba269cb2bb005ad7e</hash>
+         <hash>2101155b5f9bc867c5fc0bceb14ae0fad41160486bb4d9ed201194899fd75c5a</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\include\port.h</file>
@@ -5333,7 +5333,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files\src\usart0.c</file>
-         <hash>5a8067dbaf46fe4889a0232b7966e56e6c2d98187bfff9646c583cd977460c81</hash>
+         <hash>e730b1610351e4242c15c602b46649b0f4f8bde838accdc1985e08af7d2e58b7</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\src\adc0.c</file>
@@ -5368,16 +5368,16 @@
          <hash>974a7069c608f9e2d6526acd5f16e26eb618ed7c4a250f9a3beb4c0051f1d501</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\include\cpuint.h</file>
-         <hash>802591ef9a8f76d82a9ebdd96dac4c62c9a3c56d991188efaebd5ec3ca4228e2</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\include\rstctrl.h</file>
          <hash>3aaf94dcc7f4f51ce811c4b290f1dbcd29748fb231cb4d3e7f27f49586651c83</hash>
       </entry>
       <entry>
+         <file>mcc_generated_files\include\cpuint.h</file>
+         <hash>802591ef9a8f76d82a9ebdd96dac4c62c9a3c56d991188efaebd5ec3ca4228e2</hash>
+      </entry>
+      <entry>
          <file>mcc_generated_files\include\usart0.h</file>
-         <hash>26dba93465aa40cca96b8b0a1451e963c7c3bf9b876f98d3aaa9ec2bfd9f205b</hash>
+         <hash>1eb0c1415a51d8d5f54f25e2508377b7df086f732f818a3a60a3bb1d5d6c2775</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\config\clock_config.h</file>

@@ -55,7 +55,7 @@ uint8_t read_temperature(void)
 	volatile uint8_t temp_f = temp * (9/5) - 459.67;
 
 	// printf( ">> measurement: %d, normalised: %d, temp in K: %ld, temp C: %d, temp F: %d   \n", 
-	printf( ">> temp C: %d, temp F: %d   \n", 
+	printf( ">> temp C: %d, temp F: %d   \r\n", 
             // ADC_0_measurement, 
             // ADC_0_measurement_normalized, 
             // temp, 
@@ -77,12 +77,12 @@ int main(void)
     /* Initializes MCU, drivers and middleware */
     SYSTEM_Initialize();
     
-    printf("Starting...\n\r");
+    printf("Starting...\r\n");
     USER_LED0_SetHigh();
     /* Replace with your application code */
     while (1){
         USER_LED0_Toggle();
-        printf(">> reading...\n\r");
+        printf(">> reading...\r\n");
         read_temperature();
         _delay_ms(5000);
     }
