@@ -72,9 +72,29 @@
 #define PB2_DisableDigitalInputBuffer() do { PORTB.PIN2CTRL = (PORTB.PIN2CTRL & ~PORT_ISC_gm) | 0x4 ; } while(0)
 #define PB2_EnableInterruptForLowLevelSensing() do { PORTB.PIN2CTRL = (PORTB.PIN2CTRL & ~PORT_ISC_gm) | 0x5 ; } while(0)
 
+//get/set USER_LED0 aliases
+#define USER_LED0_SetHigh() do { PORTB_OUTSET = 0x10; } while(0)
+#define USER_LED0_SetLow() do { PORTB_OUTCLR = 0x10; } while(0)
+#define USER_LED0_Toggle() do { PORTB_OUTTGL = 0x10; } while(0)
+#define USER_LED0_GetValue() (VPORTB.IN & (0x1 << 4))
+#define USER_LED0_SetDigitalInput() do { PORTB_DIRCLR = 0x10; } while(0)
+#define USER_LED0_SetDigitalOutput() do { PORTB_DIRSET = 0x10; } while(0)
+#define USER_LED0_SetPullUp() do { PORTB_PIN4CTRL  |= PORT_PULLUPEN_bm; } while(0)
+#define USER_LED0_ResetPullUp() do { PORTB_PIN4CTRL  &= ~PORT_PULLUPEN_bm; } while(0)
+#define USER_LED0_SetInverted() do { PORTB_PIN4CTRL  |= PORT_INVEN_bm; } while(0)
+#define USER_LED0_ResetInverted() do { PORTB_PIN4CTRL  &= ~PORT_INVEN_bm; } while(0)
+#define USER_LED0_DisableInterruptOnChange() do { PORTB.PIN4CTRL = (PORTB.PIN4CTRL & ~PORT_ISC_gm) | 0x0 ; } while(0)
+#define USER_LED0_EnableInterruptForBothEdges() do { PORTB.PIN4CTRL = (PORTB.PIN4CTRL & ~PORT_ISC_gm) | 0x1 ; } while(0)
+#define USER_LED0_EnableInterruptForRisingEdge() do { PORTB.PIN4CTRL = (PORTB.PIN4CTRL & ~PORT_ISC_gm) | 0x2 ; } while(0)
+#define USER_LED0_EnableInterruptForFallingEdge() do { PORTB.PIN4CTRL = (PORTB.PIN4CTRL & ~PORT_ISC_gm) | 0x3 ; } while(0)
+#define USER_LED0_DisableDigitalInputBuffer() do { PORTB.PIN4CTRL = (PORTB.PIN4CTRL & ~PORT_ISC_gm) | 0x4 ; } while(0)
+#define USER_LED0_EnableInterruptForLowLevelSensing() do { PORTB.PIN4CTRL = (PORTB.PIN4CTRL & ~PORT_ISC_gm) | 0x5 ; } while(0)
+
 void PIN_MANAGER_Initialize();
 void PORTB_PB3_DefaultInterruptHandler(void);
 void PORTB_PB3_SetInterruptHandler(void (* interruptHandler)(void)) ;
 void PORTB_PB2_DefaultInterruptHandler(void);
 void PORTB_PB2_SetInterruptHandler(void (* interruptHandler)(void)) ;
+void PORTB_USER_LED0_DefaultInterruptHandler(void);
+void PORTB_USER_LED0_SetInterruptHandler(void (* interruptHandler)(void)) ;
 #endif /* PINS_H_INCLUDED */

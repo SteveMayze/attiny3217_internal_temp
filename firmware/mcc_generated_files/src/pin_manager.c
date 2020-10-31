@@ -34,6 +34,7 @@
 #include "../include/pin_manager.h"
 static void (*PORTB_PB3_InterruptHandler)(void);
 static void (*PORTB_PB2_InterruptHandler)(void);
+static void (*PORTB_USER_LED0_InterruptHandler)(void);
 
 void PORT_Initialize(void);
 
@@ -43,7 +44,7 @@ void PIN_MANAGER_Initialize()
 
     /* DIR Registers Initialization */
     PORTA.DIR = 0x00;
-    PORTB.DIR = 0x04;
+    PORTB.DIR = 0x14;
     PORTC.DIR = 0x00;
 
     /* OUT Registers Initialization */
@@ -86,6 +87,7 @@ void PIN_MANAGER_Initialize()
     // register default ISC callback functions at runtime; use these methods to register a custom function
     PORTB_PB3_SetInterruptHandler(PORTB_PB3_DefaultInterruptHandler);
     PORTB_PB2_SetInterruptHandler(PORTB_PB2_DefaultInterruptHandler);
+    PORTB_USER_LED0_SetInterruptHandler(PORTB_USER_LED0_DefaultInterruptHandler);
 }
 
 void PORT_Initialize(void)
@@ -134,4 +136,17 @@ void PORTB_PB2_DefaultInterruptHandler(void)
 {
     // add your PORTB_PB2 interrupt custom code
     // or set custom function using PORTB_PB2_SetInterruptHandler()
+}
+/**
+  Allows selecting an interrupt handler for PORTB_USER_LED0 at application runtime
+*/
+void PORTB_USER_LED0_SetInterruptHandler(void (* interruptHandler)(void)) 
+{
+    PORTB_USER_LED0_InterruptHandler = interruptHandler;
+}
+
+void PORTB_USER_LED0_DefaultInterruptHandler(void)
+{
+    // add your PORTB_USER_LED0 interrupt custom code
+    // or set custom function using PORTB_USER_LED0_SetInterruptHandler()
 }

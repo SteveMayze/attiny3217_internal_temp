@@ -22,6 +22,52 @@
 */
 
 #include "mcc_generated_files/mcc.h"
+#include "util/delay.h"
+// #include <stdio.h>
+#include "mcc_generated_files/include/adc0.h"
+
+volatile adc_result_t ADC_0_measurement;
+volatile uint8_t      ADC_0_measurement_normalized;
+
+uint8_t read_temperature(void)
+{
+
+	// Test driver functions, assume that an AIN channel is enabled and that
+	// the Result Ready IRQ is enabled.
+
+	// Test polled mode
+
+	// Get conversion from specified ADC channel
+	ADC_0_measurement = ADC0_GetConversion(ADC_MUXPOS_TEMPSENSE_gc);
+
+	int8_t signrow_offset = SIGROW.TEMPSENSE1;
+	uint8_t sigrow_gain = SIGROW.TEMPSENSE0;
+
+	uint32_t temp = ADC_0_measurement - signrow_offset;
+	temp *= sigrow_gain;
+	temp += 0x80;
+	temp >>= 8;
+
+	// Get 8 MSB of conversion result
+	ADC_0_measurement_normalized = ADC_0_measurement >> (ADC0_GetResolution() - 8);
+
+	volatile uint8_t temp_c = temp - 273.15;
+	volatile uint8_t temp_f = temp * (9/5) - 459.67;
+
+	// printf( ">> measurement: %d, normalised: %d, temp in K: %ld, temp C: %d, temp F: %d   \n", 
+	printf( ">> temp C: %d, temp F: %d   \n", 
+            // ADC_0_measurement, 
+            // ADC_0_measurement_normalized, 
+            // temp, 
+            temp_c, 
+            temp_f
+            );
+
+	return 1;
+}
+
+
+
 
 /*
     Main application
@@ -30,9 +76,15 @@ int main(void)
 {
     /* Initializes MCU, drivers and middleware */
     SYSTEM_Initialize();
-
+    
+    printf("Starting...\n\r");
+    USER_LED0_SetHigh();
     /* Replace with your application code */
     while (1){
+        USER_LED0_Toggle();
+        printf(">> reading...\n\r");
+        read_temperature();
+        _delay_ms(5000);
     }
 }
 /**
